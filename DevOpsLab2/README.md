@@ -17,7 +17,7 @@
 
 добавим докерфайл в наш проект
 
-<img width="254" height="261" alt="image_2025-12-25_15-45-52" src="https://github.com/user-attachments/assets/b9b7c6f1-4268-4b27-8696-efe3c4107179" />
+<img width="517" height="257" alt="image" src="https://github.com/user-attachments/assets/515e989f-00fc-4662-a024-d1887ad9ec3b" />
 
 соблюдая плохие практики написания, создадим образ
 
@@ -38,11 +38,11 @@
 - выполним проверку, что образ есть, а так же посмотрим на его размер
 - <img width="731" height="67" alt="image_2025-12-25_17-03-36" src="https://github.com/user-attachments/assets/7faeb81f-67b9-4afc-979a-b19320106515" />
 - создадим контейнер по нашему образу. работать он будет заднем фоне
-  - выполним команду `docker run -d --name bad-app -p 5046:5046 app-with-bad-dockerfile`
+  - выполним команду `docker run -d --name bad-app -p 5046:8080 app-with-bad-dockerfile`
     - `-d`: флаг для работы на заднем фоне  
     - `--name bad-app`: дадим имя контейнеру
-    - `-p 5046:5046`: порты
-  - <img width="1090" height="42" alt="image_2025-12-25_17-12-31" src="https://github.com/user-attachments/assets/a2724659-3a2a-463d-ab95-48e7db0e2845" />
+    - `-p 5046:8080`: порты (8080 - стандартный для контейнера)
+  - <img width="1101" height="41" alt="image" src="https://github.com/user-attachments/assets/5b95c522-aa9b-4798-a99a-03a1edf3a221" />
 - проверим, что все работает, отправив запрос через Postman
 - <img width="619" height="985" alt="image_2025-12-25_17-12-43" src="https://github.com/user-attachments/assets/fabf21ab-446e-47e9-bc55-adadfe4572e4" />
 
@@ -52,7 +52,7 @@
 
 еще раз посмотрим на докерфайл
 
-<img width="548" height="226" alt="image_2025-12-25_17-57-08" src="https://github.com/user-attachments/assets/4c661cb4-cf31-445c-8d48-f87ca43ba791" />
+<img width="517" height="257" alt="image" src="https://github.com/user-attachments/assets/88f018cd-3b5b-48be-ada1-7074f7a3ac58" />
 
 (см. https://github.com/bropleaseletmein/clouds/blob/main/DevOpsLab2/Dockerfile.Bad)
 
@@ -97,10 +97,10 @@
 - <img width="1184" height="599" alt="image" src="https://github.com/user-attachments/assets/b5e0a88f-94be-42cf-ae28-fa33e53e8b0f" />
 - проверим что образ есть + посмотрим, сколько весит
 - <img width="705" height="83" alt="image_2025-12-25_17-34-26" src="https://github.com/user-attachments/assets/e8a4764b-a57e-4d97-9ef5-2a96347b1dc7" />
-- делаем контейнер `docker run -d --name good-app app-with-good-dockerfile`
-- <img width="1027" height="46" alt="image_2025-12-25_17-35-06" src="https://github.com/user-attachments/assets/fa8445eb-8c9a-4fa5-87f7-7ec2cb0d0e0b" />
+- делаем контейнер `docker run -d -p 5045:8080 --name good-app app-with-good-dockerfile`
+- <img width="1114" height="40" alt="image" src="https://github.com/user-attachments/assets/3a4586d2-dfaf-42bf-b4c2-af3425148953" />
 - проверяем через Postman
-- <img width="455" height="965" alt="image_2025-12-25_17-35-31" src="https://github.com/user-attachments/assets/51c1cbbe-e67f-4efb-8616-19a537e99f4e" />
+- <img width="596" height="1000" alt="image" src="https://github.com/user-attachments/assets/c9159b27-f861-484e-9f5d-167b43deeef8" />
 
 ### что исправили
 
