@@ -1,0 +1,10 @@
+FROM mcr.microsoft.com/dotnet/sdk:latest
+
+WORKDIR /app
+
+COPY . .
+
+RUN dotnet restore DevOpsLab2.csproj
+RUN dotnet build
+
+CMD ["dotnet", "run", "--project", "DevOpsLab2.csproj"]
