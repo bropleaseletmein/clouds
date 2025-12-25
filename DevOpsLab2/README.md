@@ -17,11 +17,11 @@
 
 добавим докерфайл в наш проект
 
-<img width="517" height="257" alt="image" src="https://github.com/user-attachments/assets/515e989f-00fc-4662-a024-d1887ad9ec3b" />
+<img width="254" height="261" alt="image_2025-12-25_15-45-52" src="https://github.com/user-attachments/assets/bdfd0925-565c-4a31-8450-a840a40c7735" />
 
 соблюдая плохие практики написания, создадим образ
 
-<img width="548" height="226" alt="image_2025-12-25_17-57-08" src="https://github.com/user-attachments/assets/4c661cb4-cf31-445c-8d48-f87ca43ba791" />
+<img width="517" height="257" alt="image" src="https://github.com/user-attachments/assets/515e989f-00fc-4662-a024-d1887ad9ec3b" />
 
 (см. https://github.com/bropleaseletmein/clouds/blob/main/DevOpsLab2/Dockerfile.Bad)
 
