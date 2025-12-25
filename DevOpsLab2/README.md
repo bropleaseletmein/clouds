@@ -110,7 +110,7 @@
 
 (см https://github.com/bropleaseletmein/clouds/blob/main/DevOpsLab2/Dockerfile.Good)
 
-- `FROM mcr.microsoft.com/dotnet/sdk:8.0.416-alpine3.23 AS build`
+- `FROM mcr.microsoft.com/dotnet/sdk:9.0-alpine3.23 AS build`
   - использеум тяжелый базовый образ только для сборки
   - плюсом тянем нужную версию
   - ну и alpine используем - он легкий
@@ -122,7 +122,7 @@
   - тут копируем все, но от нежелательных вещей нас спасает докер-игнор (см выше)
 - `RUN dotnet publish -c Release -o /app/publish`
   - нормально билдим приложение с нужной конфигурацией, выходная директория будет `/app/publish`. с нее потом будет брать полученный dll
-- `FROM mcr.microsoft.com/dotnet/runtime:10.0-alpine3.23 AS run`
+- `FROM mcr.microsoft.com/dotnet/aspnet:9.0-alpine3.23 AS run`
   - стадия `run`: тянем базовый образ, в котором только все необходимое для рантайнма (JIT компилятор и тд)
   - указываем версию, плюсом используем alpine - она легкая
 - `WORKDIR /app`
