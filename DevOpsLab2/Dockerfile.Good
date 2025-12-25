@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0.416-alpine3.23 AS build
+
+WORKDIR /src
+
+COPY DevOpsLab2.csproj .
+RUN dotnet restore
+
+COPY . .
+RUN dotnet publish -c Release -o /app/publish
+
+FROM mcr.microsoft.com/dotnet/runtime:10.0-alpine3.23 AS run
+
+WORKDIR /app
+
+COPY --from=build /app/publish .
+
+USER app
+
+ENTRYPOINT [ "dotnet", "DevOpsLab2.dll" ]
