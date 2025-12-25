@@ -7,4 +7,4 @@ COPY . .
 RUN dotnet restore DevOpsLab2.csproj
 RUN dotnet build
 
-CMD ["dotnet", "run", "--project", "DevOpsLab2.csproj"]
+CMD ["dotnet", "bin/Debug/net9.0/DevOpsLab2.dll"]
