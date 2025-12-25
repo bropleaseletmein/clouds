@@ -81,7 +81,7 @@
 
 добавим новый файл
 
-<img width="592" height="404" alt="image_2025-12-25_17-33-17" src="https://github.com/user-attachments/assets/ce5b64de-e1ea-43b2-867d-3f6e1bd7dfdf" />
+<img width="538" height="399" alt="image" src="https://github.com/user-attachments/assets/e08cc9e5-b047-4d21-8b2d-a2d48a3e29ab" />
 
 (см https://github.com/bropleaseletmein/clouds/blob/main/DevOpsLab2/Dockerfile.Good)
 
@@ -94,7 +94,7 @@
 начнем с работоспособности
 - docker build -f Dockerfile.Good -t app-with-good-dockerfile .
   - флаги уже были пояснены выше
-- <img width="2547" height="900" alt="image_2025-12-25_17-34-02" src="https://github.com/user-attachments/assets/6ef90330-401e-4967-88aa-d24835ffc8dc" />
+- <img width="1184" height="599" alt="image" src="https://github.com/user-attachments/assets/b5e0a88f-94be-42cf-ae28-fa33e53e8b0f" />
 - проверим что образ есть + посмотрим, сколько весит
 - <img width="705" height="83" alt="image_2025-12-25_17-34-26" src="https://github.com/user-attachments/assets/e8a4764b-a57e-4d97-9ef5-2a96347b1dc7" />
 - делаем контейнер `docker run -d --name good-app app-with-good-dockerfile`
@@ -106,7 +106,7 @@
 
 смотрим на докерфайл
 
-<img width="592" height="404" alt="image_2025-12-25_17-33-17" src="https://github.com/user-attachments/assets/ce5b64de-e1ea-43b2-867d-3f6e1bd7dfdf" />
+<img width="538" height="399" alt="image" src="https://github.com/user-attachments/assets/ab07b6bc-6ba3-446f-858c-97d2247cb256" />
 
 (см https://github.com/bropleaseletmein/clouds/blob/main/DevOpsLab2/Dockerfile.Good)
 
