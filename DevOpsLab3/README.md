@@ -172,7 +172,7 @@
 
 <img width="1147" height="1197" alt="image_2026-01-13_22-45-13" src="https://github.com/user-attachments/assets/d3479cbd-1d22-406e-ab1b-4ccb2df96e95" />
 
-пайплайн отработал 
+пайплайн отработал (в моем коде нет тестов, поэтому все прошло. при желании их можно добавить)
 
 <img width="1180" height="479" alt="image_2026-01-13_22-47-14" src="https://github.com/user-attachments/assets/8794af3a-3d1e-423e-a988-c548a94c3d18" />
 
