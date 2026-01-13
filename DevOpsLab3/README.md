@@ -162,7 +162,33 @@
 - в билде добавил `docker image prune -f` - чистим старые образы. они нам думаюю не нужны
 - в деплое добавил `docker stop ${{ secrets.CONTAINER_NAME }} || true` и `docker rm ${{ secrets.CONTAINER_NAME }} || true` - для безопасной очистки контейнера, когда он может отсутствовать
 
-теперь проверим, работает ли это
+### теперь проверим, работает ли это:
+
+убедимся что такой ручки пока нет
+
+<img width="2142" height="397" alt="image_2026-01-13_22-41-20" src="https://github.com/user-attachments/assets/7226b797-1cc0-498d-8349-8eca93ad5fd7" />
+
+добавим новый функционнал в новой ветке `git checkout -b feature/deploy-with-good-workflow-test`, создадим мр
+
+<img width="1147" height="1197" alt="image_2026-01-13_22-45-13" src="https://github.com/user-attachments/assets/d3479cbd-1d22-406e-ab1b-4ccb2df96e95" />
+
+пайплайн отработал 
+
+<img width="1180" height="479" alt="image_2026-01-13_22-47-14" src="https://github.com/user-attachments/assets/8794af3a-3d1e-423e-a988-c548a94c3d18" />
+
+проверяем - все работает. код дошел до сервера после пуша в дев
+
+<img width="2148" height="477" alt="image_2026-01-13_22-47-42" src="https://github.com/user-attachments/assets/c52f7aa1-8c63-485d-9270-f7301bfdd821" />
+
+### в итоге за такое количество попыток
+
+<img width="877" height="1125" alt="image_2026-01-13_22-47-29" src="https://github.com/user-attachments/assets/492737d9-6c0f-41ed-a8f8-5a24f2ee844a" />
+
+### освоили базовые принципы работы с CI/CD
+
+
+
+
 
 
   
