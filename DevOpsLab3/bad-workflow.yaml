@@ -1,0 +1,21 @@
+name: "Bad Workflow"
+
+on:
+ push:
+  branches: ["main"]
+
+jobs:
+ job:
+  runs-on: self-hosted
+  steps:
+  - uses: actions/checkout@v4
+  - name: "Build docker image"
+    run: docker build -t lab3:1.0 .
+  - name: "Check images"
+    run: docker image ls
+  - name: "Stop previous container"
+    run: docker stop lab3-container
+  - name: "Delete previous container"
+    run: docker rm lab3-container
+  - name: "Create new container"
+    run: docker run -d -p 80:8080 --name lab3-container lab3:1.0
